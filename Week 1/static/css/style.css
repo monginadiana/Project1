@@ -1,5 +1,5 @@
 :root{
-    --hue-color: 250;
+    --hue-color: 275;
     --primary-color: hsl(var(--hue-color), 50%, 50%);
     --body-background-color : hsl(var(--hue-color), 70%, 97%);
     --title-color: hsl(var(--hue-color), 8% 15%);
@@ -81,6 +81,50 @@ nav{
 .collapse-toggle.active .bar:nth-child(3){
     transform: translateY(-8px) rotate(-45deg);
 }
+
+.gross-salary-form{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.card{
+    margin: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,.5);
+    padding: 1rem;
+    width: 50%;
+   
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control{
+    padding: 1rem;
+    border-radius: .5rem;
+    border: .15rem solid var(--primary-color);
+    outline-color: var(--primary-color);
+    
+}
+
+.form-submit-button{
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--link-color);
+}
+
+.form-submit-button:hover{
+    transform: translateY(.5rem);
+    background-color:hsl(275, 76%, 36%);
+}
+
+
 @media screen and (max-width: 600px) {
     .nav-items{
         display: none;
@@ -102,5 +146,9 @@ nav{
 
     .collapse-toggle{
         display: block;
+    }
+
+    .card{
+        width: 90%;
     }
 }
